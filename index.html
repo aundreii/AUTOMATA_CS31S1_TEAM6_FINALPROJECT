@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Automata Theory Tools{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Automata Theory Tools</h1>
+            <p class="lead">This web application provides tools for working with Deterministic Finite Automata (DFA) and validating URLs.</p>
+            <hr class="my-4">
+            <p>Choose one of the tools below to get started:</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">DFA Simulator</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Create, visualize, and test Deterministic Finite Automata (DFA).</p>
+                <a href="/dfa_simulator" class="btn btn-primary">Go to DFA Simulator</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">URL Validator</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Validate URLs and detect potential security issues using DFA.</p>
+                <a href="/url_validator" class="btn btn-primary">Go to URL Validator</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
